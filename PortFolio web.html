@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - RAOELINJATOVO Maharesy</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1b1b1b, #0b0b0b);
+    font-family: 'Inter', sans-serif;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* DECOR EXTERIEUR */
+.decor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.pixel {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #7a3cff;
+    opacity: 0.4;
+}
+
+.code-line {
+    position: absolute;
+    font-size: 12px;
+    color: #3b3b3b;
+    font-family: monospace;
+}
+
+.controller {
+    position: absolute;
+    font-size: 22px;
+    opacity: 0.15;
+}
+
+/* CADRE CENTRAL */
+.frame {
+    width: 85%;
+    max-width: 1100px;
+    background: #121212;
+    border: 2px solid #7a3cff;
+    box-shadow: 0 0 30px #7a3cff88;
+    border-radius: 18px;
+    padding: 50px;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 15px #7a3cff55; }
+    to { box-shadow: 0 0 35px #7a3cffaa; }
+}
+
+/* TITRES */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9d6cff;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #9d6cff;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+/* BLOCS */
+.text-box {
+    background: #1f1f1f;
+    border: 1px dashed #555;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #7a3cff22;
+    border: 1px solid #7a3cff;
+    font-size: 14px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image-box {
+    aspect-ratio: 16 / 9;
+}
+
+.img-projet {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<!-- DECOR -->
+<div class="decor">
+    <div class="pixel" style="top:10%;left:5%"></div>
+    <div class="pixel" style="top:30%;left:92%"></div>
+    <div class="pixel" style="top:70%;left:8%"></div>
+    <div class="pixel" style="top:85%;left:90%"></div>
+
+    <div class="code-line" style="top:15%;left:3%">const player = new Dev();</div>
+    <div class="code-line" style="top:40%;right:5%">if(skill &gt; 9000)</div>
+    <div class="code-line" style="top:65%;left:2%">while(building) { improve(); }</div>
+
+    <div class="controller" style="top:25%;right:10%">🎮</div>
+    <div class="controller" style="bottom:15%;left:12%">🕹️</div>
+</div>
+
+<!-- CADRE -->
+<div class="frame">
+
+<section>
+    <h1>RAOELINJATOVO<br>Maharesy</br></h1>
+    
+    <p class="subtitle">Développeur jeu vidéo | Etudiant Gaming Campus</p>
+    <div class="text-box">Phrase d'accroche personnelle</div>
+</section>
+
+<section>
+    <h2>À propos</h2>
+    <div class="text-box">Présentation complète : parcours, mentalité, objectifs</div>
+
+    <div class="skills">
+        <div class="skill">C++</div>
+        <div class="skill">SMFL</div>
+        <div class="skill">html</div>
+        <div class="skill">css</div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Projets</h2>
+
+    <div class="project">
+        <h1><div>Démineur</div></h1>
+        
+        <div class="skills">
+        <div class="skill">C++</div>
+    </div>
+
+    <br></br>
+
+        <div class="text-box">
+            <h2>Entant que développeur:</h2>
+            Ce premier jeu  est entièrement conçu sans moteur graphique sans moteur graphique. Le rendu final sera donc affiché sur la commande Windows. 
+            Je suis très content du résultat obtenu pour mon tout premier jeu développé en C++.
+            La partie compliquer était de devoir créer le concept d'aléeatoire pour l'emplacement des bombes à chaque parties.
+            Mon objectif est de partager mon évolution en présentant les différents types de projets conçus au cours de mon parcours scolaire. J'espère exceller afin de pouvoir présenter
+            davantages de projets à l'avenir.
+        </div>
+
+        <br></br>
+
+        <div class="text-box">
+            <h2>En Jeu</h2>
+            Le but du jeu est simple: il faut dévoiler toutes les cases sans toucher les bombes.
+            Le joueur utilise uniquement le pavé numérique du clavier. Pas besoin de souris.
+        </div>
+
+        <div class="image-box">
+        <img src="imageWeb/menu.png" alt="Menu" class="img-projet">
+
+    </div>
+
+    <br></br>
+
+        <div class="text-box">
+            Le joueur devra décider de sa prochaine action via le menu à chaque fois qu'il voudra jouer. Des indices ("1" à "8") indiquent le nombre de bombes qui entourent les cases que le joueur 
+            aura décider de révéler.
+            Les bombes sont marquées par "*". Les drapeaux ("F") permettent de signaler les cases suspectes.
+            Le joueur utilise uniquement le pavé numérique du clavier. Pas besoin de souris.
+        </div>
+
+        <div class="image-box">
+        <img src="imageWeb/tab.png" alt="Menu" class="img-projet">
+
+    </div>
+
+    <br></br>
+
+        <div class="text-box">
+            La partie se termine si le joueur reussi a dévoiler toutes les cases sans tomber sur une bombe ou si, au contraire, il en dévoile une avec.
+        </div>
+
+        <div class="image-box">
+        <img src="imageWeb/GameOver.png" alt="Menu" class="img-projet">
+
+    </div>
+
+    <br></br>
+
+    <div class="project">
+        <h1><div>Prochain Jeu</div></h1>
+        
+        <div class="skills">
+        <div class="skill">C++</div>
+    </div>
+
+    <br></br>
+
+</section>
+
+<section>
+    <h2>Ce que j'aime</h2>
+    <div class="text-box">Jeux</div>
+    <div class="text-box">Musique</div>
+    <div class="text-box">Football</div>
+    <div class="text-box">Football Américain</div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="contact">
+        <div class="text-box">Mail: mraoelinjatovo@gaming.tech</div>
+        <div class="text-box">Numéro teéléphone: 06 58 67 33 64</div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Maharesy - Portfolio
+</footer>
+
+</div>
+
+</body>
+</html>
